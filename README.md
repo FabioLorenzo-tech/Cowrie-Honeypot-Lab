@@ -1,35 +1,132 @@
-🪤 Cowrie Honeypot Lab
+<div align="center">
 
-Laboratório de estudos em Cibersegurança utilizando o Cowrie Honeypot para simular um serviço SSH vulnerável e analisar tentativas de acesso.
+# 🪤 Cowrie Honeypot Lab
 
-🎯 Objetivo
+**Laboratório prático de Cibersegurança utilizando o Cowrie Honeypot**
 
-O objetivo deste projeto é construir um ambiente controlado para estudar:
+Estudo de ataques SSH, força bruta, análise de logs e atividades suspeitas.
 
-Tentativas de autenticação SSH
-Ataques de força bruta
-Comandos executados por invasores
-Análise de logs
-Segurança em servidores Linux
-Monitoramento de atividades suspeitas
-🛠️ Tecnologias
-Ubuntu Linux
-Cowrie Honeypot
-SSH
-Oracle Cloud
-Git/GitHub
-📊 Monitoramento
+<p>
+  <img src="https://img.shields.io/badge/Linux-Ubuntu-orange?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Ubuntu">
+  <img src="https://img.shields.io/badge/Cowrie-Honeypot-red?style=for-the-badge" alt="Cowrie">
+  <img src="https://img.shields.io/badge/SSH-Security-blue?style=for-the-badge&logo=openssh&logoColor=white" alt="SSH">
+  <img src="https://img.shields.io/badge/Oracle%20Cloud-Server-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle Cloud">
+</p>
 
-A integração com Prometheus e Grafana será implementada posteriormente, permitindo visualizar e analisar as atividades registradas pelo honeypot.
+</div>
 
-🚧 Status do projeto
+---
 
-Em desenvolvimento
+## 🎯 Sobre o Projeto
 
-As configurações, testes, resultados e evidências serão adicionados conforme o laboratório for desenvolvido.
+Este projeto consiste na criação de um laboratório controlado de Cibersegurança utilizando o **Cowrie Honeypot**. 
+O objetivo é simular um serviço SSH vulnerável e observar como sistemas automatizados e agentes maliciosos interagem com o sistema. O laboratório possui finalidade puramente educacional, permitindo estudar técnicas de monitoramento, análise de logs e segurança em servidores Linux.
 
-⚠️ Aviso
+---
 
-Este projeto foi desenvolvido exclusivamente para fins educacionais e de laboratório.
+## 🎯 Objetivos
 
-Nenhuma atividade realizada neste projeto deve ser direcionada contra sistemas ou redes sem autorização.
+Durante o desenvolvimento do laboratório, serão estudados:
+
+* 🔐 Tentativas de autenticação SSH
+* 🔑 Ataques de força bruta
+* 💻 Comandos executados nas sessões
+* 📋 Análise detalhada de logs
+* 🐧 Segurança em servidores Linux
+* 📊 Monitoramento de atividades suspeitas
+* 🌐 Mapeamento e análise de endereços IP de origem
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+| Tecnologia | Utilização |
+| :--- | :--- |
+| 🐧 **Ubuntu Linux** | Sistema operacional do servidor |
+| 🪤 **Cowrie** | Honeypot SSH interativo |
+| 🔐 **SSH** | Serviço simulado no laboratório |
+| ☁️ **Oracle Cloud** | Hospedagem da infraestrutura do servidor |
+| 🐙 **Git / GitHub** | Versionamento e documentação |
+
+---
+
+## 🖥️ Configuração do Servidor
+
+O laboratório é executado em um servidor virtual Ubuntu Linux hospedado na Oracle Cloud.
+
+> **Nota:** As especificações de CPU, Memória RAM, Armazenamento e configurações de rede são documentadas na pasta `docs/` conforme a evolução do ambiente.
+
+---
+
+## 🪤 Instalação e Configuração do Cowrie
+
+O Cowrie será configurado para atuar como um honeypot SSH de média/alta interação. As etapas planejadas e executadas incluem:
+
+1. Instalação de dependências do sistema
+2. Configuração do ambiente virtual Python e do Cowrie
+3. Ajustes nos arquivos de configuração (`cowrie.cfg`)
+4. Redirecionamento de portas e inicialização do serviço
+5. Coleta e centralização dos logs
+
+---
+
+## 🔐 Monitoramento e Simulação SSH
+
+Como o SSH é o principal vetor de interação, o laboratório registra:
+* Tentativas de login bem e mal-sucedidas
+* Combinações de usuários e senhas mais utilizadas (`root`, `admin`, etc.)
+* Comandos digitados pelos agentes maliciosos dentro da sessão simulada
+* Horários das conexões e IPs de origem
+
+---
+
+## 📊 Análise dos Logs
+
+O Cowrie armazena telemetria detalhada sobre todas as interações. Os principais campos analisados são:
+
+| Informação | Descrição |
+| :--- | :--- |
+| 🌐 **IP** | Endereço de origem da conexão |
+| 📅 **Data/Hora** | Momento exato da tentativa de acesso |
+| 👤 **Usuário** | Credencial utilizada na autenticação |
+| 🔑 **Autenticação** | Sucesso ou falha no login |
+| 💻 **Comandos** | Ações executadas durante a invasão simulada |
+| ⚠️ **Atividade** | Comportamentos e padrões considerados maliciosos |
+
+---
+
+## 📸 Evidências dos Testes
+
+> *As evidências, capturas de tela e exemplos reais de ataques capturados serão adicionados na pasta `screenshots/` e `logs/` conforme a evolução do projeto.*
+
+---
+
+## 🚧 Status do Projeto
+
+🟡 **Em desenvolvimento**
+
+- [x] Criar repositório
+- [x] Definir objetivo do laboratório
+- [x] Definir tecnologias utilizadas
+- [x] Criar documentação inicial (`README.md`)
+- [x] Configurar servidor Ubuntu na Oracle Cloud
+- [x] Instalar e configurar o Cowrie
+- [x] Realizar testes controlados
+- [x] Analisar logs capturados
+- [x] Adicionar evidências e capturas de tela
+
+---
+
+## 📂 Estrutura do Repositório
+
+```text
+Cowrie-Honeypot-Lab/
+├── README.md
+├── docs/
+│   └── configuracao.md
+├── screenshots/
+│   ├── servidor/
+│   ├── cowrie/
+│   └── testes/
+└── logs/
+    └── .gitkeep
