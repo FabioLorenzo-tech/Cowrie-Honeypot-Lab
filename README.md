@@ -130,3 +130,27 @@ Cowrie-Honeypot-Lab/
 │   └── testes/
 └── logs/
     └── .gitkeep
+```
+## 🔍 Análises de Ataques Capturados
+
+Nesta seção, documento casos reais de interações maliciosas capturadas pelo laboratório.
+
+### 🛡️ Caso: Automação SSH (Botnet em Go)
+
+* 📅 **Data:** 14/08/2026
+* 📝 **Resumo:** Captura de um bot automatizado que utilizou credenciais `admin:admin` e tentou realizar download de payloads via SCP/cURL.
+
+| Indicador Técnico | Detalhe da Evidência |
+| :--- | :--- |
+| 🌐 **IP Origem** | `130.12.180.51` |
+| 🤖 **Tipo de Bot** | `SSH-2.0-Go` |
+| ⚡ **Ação do Atacante** | Tentativa de deploy de chave privada e execução remota |
+| 🎯 **Servidor C2** | `217.60.195.113` |
+
+### 💡 Lições Aprendidas
+
+* 🔒 A importância crítica de evitar o uso de credenciais padrão (`admin:admin`).
+* ⚙️ Como agentes maliciosos automatizam o bypass de verificação de chaves SSH (`StrictHostKeyChecking no`).
+* 📊 O valor prático de logs detalhados para mapear a infraestrutura de Comando e Controle (C2) de botnets.
+
+> 📌 **Nota:** A documentação técnica completa e as evidências brutas detalhadas estão arquivadas na pasta `/logs` deste repositório.
