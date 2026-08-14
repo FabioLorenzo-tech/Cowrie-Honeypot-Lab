@@ -105,15 +105,15 @@ O Cowrie armazena telemetria detalhada sobre todas as interações. Os principai
 
 🟡 **Em desenvolvimento**
 
-- [x] Criar repositório
-- [x] Definir objetivo do laboratório
-- [x] Definir tecnologias utilizadas
-- [x] Criar documentação inicial (`README.md`)
-- [x] Configurar servidor Ubuntu na Oracle Cloud
-- [x] Instalar e configurar o Cowrie
-- [x] Realizar testes controlados
-- [x] Analisar logs capturados
-- [x] Adicionar evidências e capturas de tela
+- ✅ Criar repositório
+- ✅ Definir objetivo do laboratório
+- ✅ Definir tecnologias utilizadas
+- ✅ Criar documentação inicial (`README.md`)
+- ✅ Configurar servidor Ubuntu na Oracle Cloud
+- ✅ Instalar e configurar o Cowrie
+- ✅ Realizar testes controlados
+- ✅ Analisar logs capturados
+- ✅ Adicionar evidências e capturas de tela
 
 ---
 
