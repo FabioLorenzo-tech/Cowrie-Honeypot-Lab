@@ -121,14 +121,15 @@ O Cowrie armazena telemetria detalhada sobre todas as interações. Os principai
 
 ```text
 Cowrie-Honeypot-Lab/
-├── [README.md](README.md)
-├── [docs/](docs/)
-│   └── [configuracao.md](docs/configuracao.md)
-├── [screenshots/](screenshots/)
-│   └── [cowrie/](screenshots/cowrie/)
-└── [logs/](logs/)
-    ├── [iocs.txt](logs/iocs.txt)
-    └── [cowrie-session-sample.json](logs/cowrie-session-sample.json)
+├── README.md
+├── docs/
+│   └── configuracao.md
+├── screenshots/
+│   ├── servidor/
+│   ├── cowrie/
+│   └── testes/
+└── logs/
+    └── .gitkeep
 ```
 ## 🔍 Análises de Ataques Capturados
 
