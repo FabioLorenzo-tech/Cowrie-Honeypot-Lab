@@ -95,7 +95,7 @@ O Cowrie armazena telemetria detalhada sobre todas as interações. Os principai
 
 ## 🚧 Status do Projeto
 
-🟡 **Em desenvolvimento**
+🟢 **Concluído**
 
 - ✅ Criar repositório
 - ✅ Definir objetivo do laboratório
