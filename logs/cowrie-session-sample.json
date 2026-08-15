@@ -5,7 +5,7 @@
     "protocol": "ssh",
     "src_ip": "130.12.180.51",
     "src_port": 54321,
-    "dst_ip": "10.0.0.4",
+    "dst_ip": "192.168.1.100",
     "dst_port": 2222,
     "session": "a1b2c3d4"
   },
