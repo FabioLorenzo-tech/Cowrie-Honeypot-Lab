@@ -50,14 +50,6 @@ Durante o desenvolvimento do laboratório, serão estudados:
 
 ---
 
-## 🖥️ Configuração do Servidor
-
-O laboratório é executado em um servidor virtual Ubuntu Linux hospedado na Oracle Cloud.
-
-> **Nota:** As especificações de CPU, Memória RAM, Armazenamento e configurações de rede são documentadas na pasta `docs/` conforme a evolução do ambiente.
-
----
-
 ## 🪤 Instalação e Configuração do Cowrie
 
 O Cowrie será configurado para atuar como um honeypot SSH de média/alta interação. As etapas planejadas e executadas incluem:
@@ -122,14 +114,12 @@ O Cowrie armazena telemetria detalhada sobre todas as interações. Os principai
 ```text
 Cowrie-Honeypot-Lab/
 ├── README.md
-├── docs/
-│   └── configuracao.md
 ├── screenshots/
-│   ├── servidor/
-│   ├── cowrie/
-│   └── testes/
+│   └── cowrie/
 └── logs/
-    └── .gitkeep
+    ├── .gitkeep
+    ├── cowrie-session-sample.json
+    └── iocs.txt
 ```
 ## 🔍 Análises de Ataques Capturados
 
