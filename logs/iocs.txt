@@ -1,1 +1,16 @@
+# Indicadores de Comprometimento (IOCs) - Cowrie Honeypot
+# Data do monitoramento: 2026
 
+## Rede
+* IP de Origem do Atacante: 130.12.180.51 (Exemplo de scanner/botnet SSH)
+* Servidor C2 / Hospedagem de Payload: 217.60.195.113
+
+## Credenciais Testadas (Brute Force)
+* admin / admin
+* root / root
+* user / user
+
+## Comportamento Observado
+1. Tentativa de login automatizada via força bruta SSH.
+2. Execução de comandos de reconhecimento básico (uname -a, id).
+3. Tentativa de download de script malicioso via wget/curl para persistência ou propagação de malware.
